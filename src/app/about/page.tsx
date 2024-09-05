@@ -1,3 +1,4 @@
+"use client"
 import Image from "next/image";
 import backImg from "@/components/assets/back.png"
 import { useRouter } from "next/navigation";
@@ -14,7 +15,7 @@ const AboutPage = () => {
     console.log(`btn`)
     router.push("/")
   }
-  
+
   return (
     <div className="text-slate-300">
       <header className="flex font-semibold tracking-wide items-center justify-between select-none mx-12 h-[10vh]">

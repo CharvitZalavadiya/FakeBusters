@@ -16,7 +16,7 @@ export default function Home() {
         layout="fill"
         objectFit="cover"
         quality={100}
-        className="-z-10 opacity-15 blur-2xl"
+        className="-z-10 opacity-35 blur-lg"
       />
       <header className="flex font-semibold tracking-wide items-center gap-7 select-none justify-end mx-12 h-[10vh]">
         <ul className="flex gap-3">

@@ -1,0 +1,23 @@
+.cardbg-st-border {
+    background-image: linear-gradient(45deg, #23b4cd, #000000);
+}
+
+.cardbg-st {
+    background-image: linear-gradient(-45deg, #000000 15%, #23b4cdb2);
+}
+
+.cardbg-pro-border {
+    background-image: linear-gradient(45deg, #a511da, #000000);
+}
+
+.cardbg-pro {
+    background-image: linear-gradient(-45deg, #000000 15%, #a511daba);
+}
+
+.cardbg-free-border {
+    background-image: linear-gradient(45deg, #959197, #000000);
+}
+
+.cardbg-free {
+    background-image: linear-gradient(-45deg, #000000 15%, #959197ba);
+}

@@ -32,7 +32,8 @@ const UploadPage = () => {
     const maxSizeInBytes = maxSizeInMB * 1024 * 1024; // Convert MB to bytes
 
     if (file) {
-      if (file.type.startsWith("video/")) { // Check if the file is a video
+      if (file.type.startsWith("video/")) {
+        // Check if the file is a video
         if (file.size > maxSizeInBytes) {
           alert(`File size should be less than ${maxSizeInMB}MB.`);
           return; // Stop further processing if the file is too large
@@ -79,7 +80,12 @@ const UploadPage = () => {
           onClick={handleUploadClick} // Trigger the upload input on click
         >
           {!fileName && ( // Only show the image if no file is uploaded
-            <Image src={uploadImage} alt="Upload Image" width={50} height={50} />
+            <Image
+              src={uploadImage}
+              alt="Upload Image"
+              width={50}
+              height={50}
+            />
           )}
           {fileName ? (
             <span className="text-slate-300 px-16">{fileName}</span> // Show file name if a file is uploaded
@@ -104,9 +110,10 @@ const UploadPage = () => {
             </span>
           </span>
           <hr className="mr-20 ml-20" />
-          <span className="grid grid-cols-2 mx-12 place-items-center text-slate-400 text-2xl">
+          <span className="grid grid-cols-1 mx-12 gap-12 text-slate-400 text-2xl">
             <span>
               Accuracy : <span className="font-bold text-slate-300">86%</span>
+              <hr className="mr-20 mt-3" />
             </span>
             <span>
               Confidence : <span className="font-bold text-slate-300">65%</span>

@@ -112,10 +112,10 @@ const UploadPage = () => {
           <hr className="mr-20 ml-20" />
           <span className="grid grid-cols-1 mx-20 gap-12 text-slate-400 text-2xl">
             <span>
-              Accuracy : <span className="font-bold text-slate-300">86%</span>
+              Accuracy : <span className="font-bold text-slate-300"></span>
             </span>
             <span>
-              Confidence : <span className="font-bold text-slate-300">65%</span>
+              Confidence : <span className="font-bold text-slate-300"></span>
             </span>
           </span>
         </section>

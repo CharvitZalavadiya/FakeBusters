@@ -7,7 +7,6 @@ import dpImg from "@/components/assets/team/dp.jpg";
 import kpImg from "@/components/assets/team/kp.jpeg";
 import hbImg from "@/components/assets/team/hb.jpeg";
 import akImg from "@/components/assets/team/ak.jpg";
-import userImg from "@/components/assets/team/user.png";
 import Image from "next/image";
 
 const AboutusCard = () => {

@@ -5,9 +5,6 @@ import uploadImage from "@/components/assets/upload.png";
 import backImg from "@/components/assets/back.png";
 import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
-import Popup1 from "@/components/comps/popup1";
-import Popup2 from "@/components/comps/popup2";
-import Popup3 from "@/components/comps/popup3";
 
 const UploadPage = () => {
   const navLinks = [
@@ -18,17 +15,8 @@ const UploadPage = () => {
   const router = useRouter();
   const fileInputRef = useRef<HTMLInputElement | null>(null); // Reference to the file input
   const [fileName, setFileName] = useState<string>(""); // State to store the file name
-  const [showPopup, setShowPopup] = useState(1);
 
   const handleBackBtn = () => {
-    router.push("/");
-  };
-
-  const handlePopupClose = () => {
-    setShowPopup((prev) => prev + 1);
-  };
-
-  const handleFinalPopupClose = () => {
     router.push("/");
   };
 

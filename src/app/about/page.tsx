@@ -2,6 +2,7 @@
 import Image from "next/image";
 import backImg from "@/components/assets/back.png"
 import { useRouter } from "next/navigation";
+import AboutusCard from "@/components/comps/aboutusCard";
 
 const AboutPage = () => {
   const navLinks = [
@@ -27,7 +28,7 @@ const AboutPage = () => {
             <a href={link.path} key={index} className="cursor-pointer">
               <li
                 key={index}
-                className="px-5 py-2 text-slate-300 rounded-lg hover:bg-zinc-700"
+                className={`px-5 py-2 text-slate-300 rounded-lg hover:bg-zinc-600 ${link.name === "About Us" ? "bg-zinc-700" : ""}`}
               >
                 {link.name}
               </li>
@@ -35,6 +36,9 @@ const AboutPage = () => {
           ))}
         </ul>
       </header>
+      <main className="flex justify-center items-center h-[80vh]">
+        <AboutusCard />
+      </main>
     </div>
   );
 };

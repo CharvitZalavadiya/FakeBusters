@@ -10,6 +10,7 @@ const UploadPage = () => {
   const navLinks = [
     { name: "Home", path: "/" },
     { name: "About Us", path: "/about" },
+    { name: "Pricing", path: "/pricing" },
   ];
 
   const router = useRouter();

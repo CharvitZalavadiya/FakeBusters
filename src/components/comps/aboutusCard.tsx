@@ -5,6 +5,8 @@ import czImg from "@/components/assets/team/cz.jpg";
 import kbImg from "@/components/assets/team/kb.jpg";
 import dpImg from "@/components/assets/team/dp.jpg";
 import kpImg from "@/components/assets/team/kp.jpeg";
+import hbImg from "@/components/assets/team/hb.jpeg";
+import akImg from "@/components/assets/team/ak.jpg";
 import userImg from "@/components/assets/team/user.png";
 import Image from "next/image";
 
@@ -28,12 +30,12 @@ const AboutusCard = () => {
     {
       title: "Harvi Bhanvadiya",
       body: "Contribute to Research about the field",
-      photo: userImg,
+      photo: hbImg,
     },
     {
       title: "Aditi Kakadiya",
       body: "Contribute to make the idea commercial",
-      photo: userImg,
+      photo: akImg,
     },
     {
       title: "Charvit Zalavadiya",

@@ -1,0 +1,54 @@
+body {
+    margin: 0;
+      background-color: #111;
+    width: 100%;
+    font-family: "Cutive Mono", monospace;
+      color: white;
+    line-height: 1.5;
+    font-weight: 400;
+    font-style: normal;
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
+      
+  }
+  .container{
+      margin : 10%;
+  }
+  h1{
+      font-size: 1em;
+    text-transform: uppercase;
+      letter-spacing: 0.3em;
+  }
+  
+  .text > span{
+    animation: letter-glow 0.7s 0s ease both;
+  }
+  .sep {
+    border: 0;
+    width: 3em;
+    height: 1px;
+    margin: 1em 0;
+    background-color: rgba(255, 255, 255, 0.4);
+  }
+  
+  @keyframes letter-glow {
+    0% {
+      opacity: 0;
+      text-shadow: 0px 0px 1px rgba(255, 255, 255, 0.2);
+    }
+    66% {
+      opacity: 1;
+      text-shadow: 0px 0px 20px rgba(255, 255, 255, 0.9);
+    }
+    77% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.7;
+      text-shadow: 0px 0px 20px rgba(255, 255, 255, 0);
+    }
+  }
+  

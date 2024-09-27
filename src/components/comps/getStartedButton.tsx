@@ -4,15 +4,18 @@ import { useRouter } from "next/navigation";
 import "./getStartedButtonCSS.css"
 
 const GetStartedButton = () => {
+  
   const router = useRouter();
   
   const handleBtnClick = () => {
     console.log(`btn Clicked`)
-    router.push("/upload")
+    setTimeout(() => {
+      router.push("/upload")
+    }, 4400)
   }
 
-    return ( /* From Uiverse.io by MuhammadHasann */ 
-        <button className="button" onClick={handleBtnClick}>
+    return (
+        <button className={`button`} onClick={handleBtnClick}>
           <div className="dots_border"></div>
           <svg
             xmlns="http://www.w3.org/2000/svg"

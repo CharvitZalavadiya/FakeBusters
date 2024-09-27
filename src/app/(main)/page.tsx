@@ -29,11 +29,11 @@ export default function Home() {
 
     setTimeout(() => {
       setIsClicked(false);
-    }, 4700);
+    }, 5700);
   };
 
   return (
-    <div className="relative select-none h-screen">
+    <div className="relative select-none h-screen w-screen overflow-hidden">
       {/* <StarBG /> */}
       <Image
         src={bgimg}

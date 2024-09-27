@@ -5,7 +5,6 @@ import uploadImage from "@/components/assets/upload.png";
 import backImg from "@/components/assets/back.png";
 import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
-import StarBG from "@/components/comps/starbg";
 
 const UploadPage = () => {
   const navLinks = [

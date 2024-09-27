@@ -5,7 +5,7 @@
 }
 
 .teamNameDiv-rl {
-  width: 350px;
+  width: 310px;
   animation: reveal 5s;
 }
 
@@ -50,14 +50,14 @@
     width: 0px;
   }
   30% {
-    width: 350px;
+    width: 310px;
   }
   80% {
     opacity: 1;
   }
   100% {
     opacity: 1;
-    width: 350px;
+    width: 310px;
   }
 }
 
@@ -230,16 +230,16 @@
     margin-left: -2px;
   }
   65% {
-    margin-left: -350px;
+    margin-left: -310px;
   }
   100% {
-    margin-left: -350px;
+    margin-left: -310px;
   }
 }
 
 @keyframes hide {
   0% {
-    width: 350px;
+    width: 310px;
     opacity: 1;
   }
   30% {

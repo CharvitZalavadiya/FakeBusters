@@ -5,6 +5,7 @@ import uploadImage from "@/components/assets/upload.png";
 import backImg from "@/components/assets/back.png";
 import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
+import StarBG from "@/components/comps/starbg";
 
 const UploadPage = () => {
   const navLinks = [
@@ -53,6 +54,7 @@ const UploadPage = () => {
       {showPopup === 2 && <Popup2 onClose={handlePopupClose} />}
       {showPopup === 3 && <Popup3 onClose={handleFinalPopupClose} />} */}
       <header className="flex font-semibold tracking-wide items-center justify-between select-none mx-12 h-[10vh]">
+      {/* <StarBG /> */}
         <button onClick={handleBackBtn}>
           <Image
             src={backImg}

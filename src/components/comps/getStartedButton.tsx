@@ -11,7 +11,7 @@ const GetStartedButton = () => {
     console.log(`btn Clicked`)
     setTimeout(() => {
       router.push("/upload")
-    }, 4400)
+    }, 4300)
   }
 
     return (

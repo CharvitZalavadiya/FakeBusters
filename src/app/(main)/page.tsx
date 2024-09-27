@@ -4,6 +4,7 @@ import "./css.css";
 import Image from "next/image";
 import bgimg from "@/components/assets/bg_img_website.jpg";
 import { useState } from "react";
+import StarBG from "@/components/comps/starbg";
 
 export default function Home() {
   const navLinks = [
@@ -34,6 +35,7 @@ export default function Home() {
 
   return (
     <div className="relative select-none h-screen">
+      {/* <StarBG /> */}
       <Image
         src={bgimg}
         alt="Background"

@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import {Lato} from 'next/font/google'
+import StarBG from "@/components/comps/starbg";
 
 const lato = Lato({
   weight: ['400', '700'], // Specify the weights you need
@@ -22,6 +23,7 @@ export default function RootLayout({
       <body
         className={`${lato.className}`}
       >
+        <StarBG />
         {children}
       </body>
     </html>

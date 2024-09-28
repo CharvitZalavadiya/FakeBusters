@@ -21,7 +21,7 @@
 
 .particle, .particle:after {
   background: transparent;
-  opacity: 0.2;
+  opacity: 0.3;
 }
 
 .particle:after {

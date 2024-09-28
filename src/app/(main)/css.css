@@ -81,7 +81,7 @@
 }
 
 @keyframes fade-in {
-  0%{
+  0% {
     opacity: 0;
     transform: translateY(20px);
   }
@@ -95,7 +95,7 @@
 /*btn animation*/
 
 .btnAnimation {
-  animation: btnAnimation 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
+  animation: btnAnimation 1s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
   animation-delay: 3s;
 }
 
@@ -139,7 +139,7 @@
   opacity: 0;
 }
 
- @keyframes navLinksAnimation {
+@keyframes navLinksAnimation {
   0% {
     letter-spacing: -0.5em;
     transform: translateZ(-500px) translateY(-50px);
@@ -154,34 +154,33 @@
   }
 }
 
-
 /* outgoing animation */
 
 .outAnimT-fl {
   animation: outgoing 0.7s;
-  animation-delay: 4s;
+  animation-delay: 3s;
 }
 
 .outAnimT-rl {
-  animation: slideout 0.1s;
-  animation-delay: 4s;
+  animation: slideout 0.3s;
+  animation-delay: 2.7s;
 }
 
 .outAnimTdiv-rl {
-  animation: hide 4s;
+  animation: hide 2s;
   animation-delay: 2.5s;
 }
 
 .outAnimParaText span {
   opacity: 1;
   filter: blur(0);
-  animation: paraFadeOut 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+  animation: paraFadeOut 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
   animation-delay: -1.5s;
 }
 
 .outAnimBtn {
-  animation: btnOut 1s cubic-bezier(0.250, 0.460, 0.450, 0.940) both;
-  animation-delay: 0.5s;
+  animation: btnOut 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+  animation-delay: 0.3s;
 }
 
 .outAnimDetails {
@@ -257,7 +256,17 @@
     opacity: 1;
   }
   100% {
-    transform: translateY(100px);
+    transform: translateY(150px);
     opacity: 0;
   }
+}
+
+main span h1 div {
+  color: #b4b4b4;
+}
+
+main span h1 div:last-child {
+  background-image: linear-gradient(90deg, #b3b3b3 0%, #5c5c5c 74%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }

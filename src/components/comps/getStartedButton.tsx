@@ -10,8 +10,8 @@ const GetStartedButton = () => {
   const handleBtnClick = () => {
     console.log(`btn Clicked`)
     setTimeout(() => {
-      router.push("/upload")
-    }, 4300)
+      router.push("/sign-in")
+    }, 3500)
   }
 
     return (

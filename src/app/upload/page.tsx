@@ -5,6 +5,8 @@ import uploadImage from "@/components/assets/upload.png";
 import backImg from "@/components/assets/back.png";
 import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
+import "./upload.css";
+import { UserButton } from "@clerk/nextjs";
 
 const UploadPage = () => {
   const navLinks = [
@@ -48,12 +50,8 @@ const UploadPage = () => {
   };
 
   return (
-    <div className="text-slate-300">
-      {/* {showPopup === 1 && <Popup1 onClose={handlePopupClose} />}
-      {showPopup === 2 && <Popup2 onClose={handlePopupClose} />}
-      {showPopup === 3 && <Popup3 onClose={handleFinalPopupClose} />} */}
+    <div>
       <header className="flex font-semibold tracking-wide items-center justify-between select-none mx-12 h-[10vh]">
-      {/* <StarBG /> */}
         <button onClick={handleBackBtn}>
           <Image
             src={backImg}
@@ -63,12 +61,13 @@ const UploadPage = () => {
             className="rounded-full p-2 bg-zinc-800 hover:cursor-pointer hover:bg-zinc-900"
           />
         </button>
+        <UserButton />
         <ul className="flex gap-3 w-fit">
           {navLinks.map((link, index) => (
             <a href={link.path} key={index} className="cursor-pointer">
               <li
                 key={index}
-                className="px-5 py-2 text-slate-300 rounded-lg hover:bg-zinc-700"
+                className="px-5 py-2 rounded-lg hover:bg-zinc-700"
               >
                 {link.name}
               </li>
@@ -78,7 +77,7 @@ const UploadPage = () => {
       </header>
       <main className="grid grid-cols-2">
         <section
-          className="h-[70vh] flex flex-col justify-center items-center border-2 border-slate-600 rounded-lg text-slate-500 mx-12 my-12 hover:cursor-pointer"
+          className="uploadSection h-[70vh] flex flex-col justify-center items-center border border-slate-600 rounded-lg  mx-12 my-12 hover:cursor-pointer"
           onClick={handleUploadClick} // Trigger the upload input on click
         >
           {!fileName && ( // Only show the image if no file is uploaded
@@ -90,7 +89,7 @@ const UploadPage = () => {
             />
           )}
           {fileName ? (
-            <span className="text-slate-300 px-16">{fileName}</span> // Show file name if a file is uploaded
+            <span className="px-16">{fileName}</span> // Show file name if a file is uploaded
           ) : (
             <span>Upload your video file here</span> // Default text
           )}
@@ -103,21 +102,24 @@ const UploadPage = () => {
           />
         </section>
         <section className="my-12 flex flex-col gap-12">
-          <span className="grid grid-cols-2 place-items-center text-4xl font-semibold">
-            <span className="bg-red-700 opacity-80 text-white rounded-md px-8 py-2">
-              Fake
-            </span>
-            <span className="bg-green-700 opacity-30 text-white rounded-md px-8 py-2">
-              Real
+          <span className="flex gap-16 text-4xl font-semibold text-neutral-300">
+            Result
+            <span className="flex gap-20 text-xl">
+              <span className="bg-red-700 rounded-md px-8 py-2">Fake</span>
+              <span className="bg-green-700 rounded-md px-8 py-2">Real</span>
             </span>
           </span>
-          <hr className="mr-20 ml-20" />
-          <span className="grid grid-cols-1 mx-20 gap-12 text-slate-400 text-2xl">
-            <span>
-              Accuracy : <span className="font-bold text-slate-300"></span>
-            </span>
-            <span>
-              Confidence : <span className="font-bold text-slate-300"></span>
+          <span className="grid grid-cols-1 gap-6 text-4xl font-semibold text-neutral-300">
+            Data
+            <span className="text-lg opacity-80 font-normal grid grid-cols-2">
+              <span className="grid">
+                Accuracy
+                <span className="font-bold text-2xl text-white">86</span>
+              </span>
+              <span className="grid">
+                Confidence
+                <span className="font-bold text-2xl text-white">76</span>
+              </span>
             </span>
           </span>
         </section>

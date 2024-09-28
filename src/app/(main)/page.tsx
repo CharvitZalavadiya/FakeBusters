@@ -74,12 +74,12 @@ export default function Home() {
               }`}
             >
               <span className={`teamName-rl ${isClicked ? "outAnimT-rl" : ""}`}>
-                ackBusters
+                akeBusters
               </span>
             </div>
           </h1>
           <p
-            className={`paraText text-2xl font-semibold tracking-wide flex justify-center mb-10 text-slate-300 ${
+            className={`paraText text-2xl font-semibold tracking-wide flex justify-center mb-10 text-neutral-300 ${
               isClicked ? "outAnimParaText" : ""
             }`}
           >
@@ -102,7 +102,7 @@ export default function Home() {
           </p>
         </span>
         <p
-          className={`detailsAnimation text-slate-300 text-lg py-8 px-14 w-screen flex overflow-hidden flex-wrap justify-center ${
+          className={`detailsAnimation text-neutral-300 text-lg py-8 px-14 w-screen flex overflow-hidden flex-wrap justify-center ${
             isClicked ? "outAnimDetails" : ""
           }`}
         >

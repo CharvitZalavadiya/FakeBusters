@@ -91,3 +91,89 @@ body {
     @apply bg-background text-foreground;
   }
 }
+
+
+
+/* Clerk Form Styles */
+
+/* Auth */
+
+/* User Button */
+.cl-internal-gpirto,
+.cl-internal-11ttlho,
+.cl-internal-lqfubk {
+  display: none;
+}
+
+.cl-userButtonPopoverCard {
+  background-color: #1f1f1f;
+  border-radius: 20px;
+}
+
+.cl-userButtonPopoverMain{
+  background-color: #1f1f1f;
+}
+
+.cl-userButtonPopoverActionButton {
+  color: #bbbbbb;
+}
+
+.cl-userButtonPopoverActionButton:hover{
+  color: #a9a9a9;
+  background-color: #363636;
+}
+
+.cl-internal-1hp5nqm {
+  background-color: #1f1f1f;
+}
+
+.cl-card {
+  background-image: linear-gradient(#1a1a1a 0%, #363636 60%);
+}
+
+.cl-headerTitle {
+  color: #bbbbbb;
+}
+
+.cl-socialButtonsBlockButtonText{
+  color: #a9a9a9;
+}
+
+.cl-formFieldLabel{
+  color: #a9a9a9;
+}
+
+.cl-dividerLine {
+  background-color: #696969;
+}
+
+.cl-formButtonPrimary{
+  box-shadow: none;
+  background-color: rgb(19, 149, 241);
+}
+
+.cl-socialButtonsBlockButton{
+  background-color: #171717;
+  box-shadow: none;
+}
+
+.cl-socialButtonsBlockButton:hover {
+  background-color: #1f1f1f;
+  box-shadow: none;
+}
+
+.cl-footer {
+  background-image: linear-gradient(#363636 0%, #393939 60%);
+}
+
+.cl-footerActionText {
+  color: #a9a9a9;
+}
+
+.cl-footerActionLink {
+  color: rgb(19, 149, 241);
+}
+
+.cl-footerActionLink:hover {
+  color: rgb(109, 180, 231);
+}

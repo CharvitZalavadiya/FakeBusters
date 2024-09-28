@@ -2,26 +2,13 @@
 
 import Image from "next/image";
 import uploadImage from "@/components/assets/upload.png";
-import backImg from "@/components/assets/back.png";
-import { useRouter } from "next/navigation";
 import { useRef, useState } from "react";
 import "./upload.css";
 import { UserButton } from "@clerk/nextjs";
 
 const UploadPage = () => {
-  const navLinks = [
-    { name: "Home", path: "/" },
-    { name: "About Us", path: "/about" },
-    { name: "Pricing", path: "/pricing" },
-  ];
-
-  const router = useRouter();
   const fileInputRef = useRef<HTMLInputElement | null>(null); // Reference to the file input
   const [fileName, setFileName] = useState<string>(""); // State to store the file name
-
-  const handleBackBtn = () => {
-    router.push("/");
-  };
 
   const handleUploadClick = () => {
     if (fileInputRef.current) {
@@ -50,29 +37,15 @@ const UploadPage = () => {
   };
 
   return (
-    <div>
+    <div className="overflow-hidden">
       <header className="flex font-semibold tracking-wide items-center justify-between select-none mx-12 h-[10vh]">
-        <button onClick={handleBackBtn}>
-          <Image
-            src={backImg}
-            alt="Back Image"
-            width={40}
-            height={40}
-            className="rounded-full p-2 bg-zinc-800 hover:cursor-pointer hover:bg-zinc-900"
-          />
-        </button>
-        <UserButton />
-        <ul className="flex gap-3 w-fit">
-          {navLinks.map((link, index) => (
-            <a href={link.path} key={index} className="cursor-pointer">
-              <li
-                key={index}
-                className="px-5 py-2 rounded-lg hover:bg-zinc-700"
-              >
-                {link.name}
-              </li>
-            </a>
-          ))}
+        <span className="userBtn flex border-[1.5px] border-neutral-500 rounded-full">
+          <UserButton />
+        </span>
+        <ul>
+          <li className="upgradeBtn px-5 py-2 rounded-lg hover:bg-zinc-700 cursor-pointer">
+            Upgrade
+          </li>
         </ul>
       </header>
       <main className="grid grid-cols-2">
@@ -101,7 +74,7 @@ const UploadPage = () => {
             onChange={handleFileChange} // Handle file change
           />
         </section>
-        <section className="my-12 flex flex-col gap-12">
+        <section className="resultSection my-12 flex flex-col gap-12 w-fit p-8 border border-slate-600 rounded-lg">
           <span className="flex gap-16 text-4xl font-semibold text-neutral-300">
             Result
             <span className="flex gap-20 text-xl">

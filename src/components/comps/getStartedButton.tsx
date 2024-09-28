@@ -11,7 +11,7 @@ const GetStartedButton = () => {
     console.log(`btn Clicked`)
     setTimeout(() => {
       router.push("/sign-in")
-    }, 3500)
+    }, 1800)
   }
 
     return (

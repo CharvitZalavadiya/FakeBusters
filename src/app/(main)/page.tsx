@@ -86,7 +86,7 @@ export default function Home() {
             {paraTextWords.map((word, index) => (
               <span
                 key={index}
-                style={{ animationDelay: `${1.5 + 0.1 * (index + 1)}s` }}
+                style={{ animationDelay: isClicked ? `${0.4 + 0.1 * (index + 1)}s` : `${1.5 + 0.1 * (index + 1)}s` }}
               >
                 {word}&nbsp;
               </span>

@@ -65,6 +65,7 @@
 
 .paraText {
   animation: scale 4s forwards cubic-bezier(0.5, 1, 0.89, 1);
+  animation-delay: 1.5s;
 }
 
 @keyframes scale {
@@ -77,7 +78,7 @@
   display: inline-block;
   opacity: 0;
   filter: blur(5px);
-  animation: fade-in 0.8s forwards 5s 1 cubic-bezier(0.11, 0, 0.5, 0);
+  animation: fade-in 0.8s forwards 1.5s 1 cubic-bezier(0.11, 0, 0.5, 0);
 }
 
 @keyframes fade-in {
@@ -158,29 +159,28 @@
 
 .outAnimT-fl {
   animation: outgoing 0.7s;
-  animation-delay: 3s;
+  animation-delay: 1.5s;
 }
 
 .outAnimT-rl {
-  animation: slideout 0.3s;
-  animation-delay: 2.7s;
+  animation: slideout 0.1s;
+  animation-delay: 2.2s;
 }
 
 .outAnimTdiv-rl {
   animation: hide 2s;
-  animation-delay: 2.5s;
+  animation-delay: 1s;
 }
 
 .outAnimParaText span {
   opacity: 1;
   filter: blur(0);
   animation: paraFadeOut 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
-  animation-delay: -1.5s;
 }
 
 .outAnimBtn {
   animation: btnOut 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-  animation-delay: 0.3s;
+  animation-delay: 0.2s;
 }
 
 .outAnimDetails {
